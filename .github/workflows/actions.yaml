@@ -1,0 +1,15 @@
+name: GitHub Action WorkFlow
+
+on: [push]
+
+jobs:
+  run-github-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Simple Javascript Action
+        id: simple-action
+        uses: actions/hello-world-javascript-action@v1
+        with:
+          who-to-greet: Trung Do
+      - name: Log the time
+        run: echo "${{ steps. }}"
