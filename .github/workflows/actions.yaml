@@ -12,4 +12,4 @@ jobs:
         with:
           who-to-greet: Trung Do
       - name: Log the time
-        run: echo "${{ steps. }}"
+        run: echo "${{ steps.simple-action.output.time }}"
