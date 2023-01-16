@@ -1,0 +1,12 @@
+on: [push]
+
+jobs:
+  run-shell-command:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: hello world
+        run: echo hello-world
+      - name: check node version
+        run: 
+          node -v 
+          npm -v
